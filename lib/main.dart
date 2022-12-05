@@ -13,7 +13,7 @@ void main() async{
   SharedPreferences  v = await SharedPreferences.getInstance();
   bool? value=false;
   value=  v.getBool("sett")??false;
-  runApp( MyApp(islogged: value!,));
+  runApp( MyApp(islogged: value,));
 }
 
 class MyApp extends StatelessWidget {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter shanu',
       theme: ThemeData(
         // This is the theme of your application.
         //
